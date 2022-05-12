@@ -1,4 +1,5 @@
 import discord
+from os import getenv
 
 
 class MyClient(discord.Client):
@@ -18,4 +19,4 @@ class MyClient(discord.Client):
 
 
 client = MyClient()
-client.run('OTc0MzA2MjAwNjAwNTg0MjYz.GBKGN_.cAQX6ZbyH8MCnrig1YOWcZQu7uMJGB4S0DNtU8')
+client.run(getenv('DiscordBotToken'))
